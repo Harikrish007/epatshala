@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<style>
+.succulent_care {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 6em 3em;
+    background-color:#ecfef8;
+}
+
+.icon img {
+    width: 3em;
+    display: flex;
+    position: absolute;
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4em;
+    margin-top: 0.4em;
+}
+
+@media all and (max-width: 62em) { 
+    .succulent_care {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .column {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding-right: 1em;
+    }
+}
+
+/* Video section*/
+
+.video {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    background: url('Logo1.jpg') center center no-repeat;
+
+}
+.play_btn {
+    
+    display: flex;
+    z-index: 1;
+    margin: 20% auto;
+    justify-content: center;
+}
+.play_btn img {
+    width: 100px;
+}
+.play_btn > img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+@media all and (max-width: 62em) { 
+    .play_btn img{
+        width: 75px;
+    }
+}
+#product_section h2 {
+    display: flex;
+    position: relative;
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 2em;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+#products {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 5em 3em 10em 3em;
+    gap: 2em;
+}
+
+.product {
+    width: 22%;
+    border: 1px solid #ecfef8;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ecfef8;
+    box-shadow: 0 0.2em 0.5em #061d1a71;
+}
+
+.product img {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-bottom: 0.8em;
+}
+
+.plants {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 1em 0;
+}
+.product h3 {
+    margin: 1.1em 0 0.8em 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+.product p {
+    margin: 0.5em 1em;
+}
+.btn {
+    width: 40%;
+    height: 2.5em;
+    background-color: #00919bd0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 1em;
+    border-color: #00919b91;
+    color: #ffffff;
+}
+@media all and (max-width: 62em) { 
+    #products {
+        flex-wrap: wrap;
+        padding: 3em 1em 8em 1em;
+    }
+    .product {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 32em) {
+    .product {
+        width: 70%;
+    }
+}
+
+
+#contact_us {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #e0edeb;
+    padding-top: 5%;
+    padding-bottom: 20%;
+    background-image: url('https://i.pinimg.com/originals/e8/5e/5c/e85e5c490d2bb5bee5500aa4b2f77055.jpg');
+}
+
+#contact_us h2 {
+    font-family: 'Caveat', cursive;
+    color: #fafafa;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-shadow: 0.06em 0.06em 0.12em #061d1a71;
+}
+
+.contact_form {
+    width: 60%;
+    height: 75%;
+    background-color: transparent;
+    border-radius: 7px;
+    padding: 3em 1.5em 2em 1.5em;
+    margin: 0 auto;
+    box-shadow: 0.1em 0.1em 2em #fab76a;
+}
+
+@media all and (max-width: 62em) {
+    #contact_us {
+        padding-bottom: 25%;
+    }
+    .contact_form {
+        width: 80%;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ </style> 
+<div id="succulent_care"></div>
+<div class="container">
+  <section class="succulent_care">
+    <div class="column">
+      <div class="icon"><img src="https://i.pinimg.com/originals/07/20/87/072087ce1bffb7890eb18da79dda463b.png" alt="water">
+      </div>
+      <div class="detail">
+        <h3>Feeding</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="icon"><img src="https://i.pinimg.com/originals/1d/17/49/1d1749c33e4b124043eb631f2aba2c5b.png" alt="light">
+      </div>
+      <div class="detail">
+        <h3>Light</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="icon"><img src="https://i.pinimg.com/originals/c4/8d/f8/c48df8ec28f21e91e7218837f0c4be51.png" alt="grow">
+      </div>
+      <div class="detail">
+        <h3>Where to grow</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </section>
+  <section class="video" id="video">
+    <a class="play_btn" href="https://player.vimeo.com/video/299486534?title=0&portrait=0&byline=0&autoplay=1" target="_blank"><img src="https://i.pinimg.com/originals/05/fe/4c/05fe4cc76dd7a5fdf18b127d9be2cbfe.png" alt="noun_play"></a>    
+  </section>
+  
+  <section id="product_section">
+    <div>
+      <h2>Products</h2>
+    </div>
+    <div id="products">
+    <div class="product" id="succulent1">
+      <img src="https://i.pinimg.com/originals/35/5e/57/355e576b6ce9bde9af88263c83c683e0.png" alt="">
+      <div class="plants">Succulent 1</div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, molestias?</p>
+      <h3>105 TL</h3>
+      <button class="btn">Buy</button>
+    </div>
+    <div class="product" id="succulent2">
+      <img src="https://i.pinimg.com/originals/e9/80/55/e98055ef005dafcb47469cfede3bc72c.png" alt="">
+      <div class="plants">Succulent 2</div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, qui.</p>
+      <h3>100 TL</h3>
+      <button class="btn">Buy</button>
+    </div>
+    <div class="product" id="succulent3">
+      <img src="https://i.pinimg.com/originals/e4/e9/20/e4e920457e20ddb41e609f9b2cc4dcc7.png" alt="">
+      <div class="plants">Succulent 3</div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam.</p>
+      <h3>96 TL</h3>
+      <button class="btn">Buy</button>
+    </div>
+    <div class="product" id="succulent4">
+      <img src="https://i.pinimg.com/originals/b5/5b/e3/b55be315fc344c79f7025bc0db63bd22.png" alt="">
+      <div class="plants">Succulent 4</div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet?</p>
+      <h3>87 TL</h3>
+      <button class="btn">Buy</button>
+    </div>
+    </div>
+  </section>
+
+</html>
